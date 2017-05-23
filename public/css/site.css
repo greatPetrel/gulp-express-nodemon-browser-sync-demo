@@ -1,0 +1,8 @@
+
+.sider{
+  float: right;
+}
+.filelist li{height: 30px; margin-top:20px; }
+.filelist img{width: 25px;
+height: 25px;position: relative;top: 5px;}
+.hide{display: none;}

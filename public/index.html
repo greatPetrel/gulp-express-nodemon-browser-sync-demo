@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/site.css" />
+  <script src="js/webpack/bundle.js" type="text/javascript" charset="utf-8" async defer></script>
+<style>
+  span{margin:20px;}
+</style>
+</head>
+
+<body class="what">
+  <!-- some dummy non-conforming quick dirty html code to test browser-sync. dont't judge me. -->
+  <h3>Multi browser test due to [browser-sync]</h3>
+  <div class="box">
+    Node.JS is a server-side technology, not a browser technology. Thus, Node-specific calls, like require(), do not work in
+    the browser. See
+    <a href="http://browserify.org/" target="_blank">browserify</a> or
+    <a href="http://zhaoda.net/webpack-handbook/index.html" target="_blank">webpack</a> if you wish to serve browser-specific
+    modules from Node.</div>
+    <p>if index.html in boot menu is nessary</p>
+    <span>
+        <a href="pages/2.html">pages/2.html</a>
+    </span>
+     <span>
+        <a href="pages/view-pdf.html">pages/view-pdf.html</a>
+    </span>
+     <span>
+        <a href="pages/view-docs.html">pages/view-docs.html</a>
+    </span>
+    <span>
+        <a href="Viewerjs/docs/hongdo.docx">Viewerjs/docs/hongdo.docx</a>
+    </span>
+    <br/>
+    <!--<p><a href="Viewerjs/docs/hongdo.docx">Viewerjs/docs/hongdo.docx</a></p>-->
+
+  <p>【/2.html】This is not work,that's because
+    <b style="color: red;"> prefix "/"</b> means <b style="color: red;"> root menu</b></p>
+  <!-- from 小咸鱼 -->
+  <div class="listHeight what">
+    <!--列表内容写在这里面-->
+    <ul class="mui-table-view" id="list">
+      <div class="loading loadingList">
+        <span class="text"></span>
+        <span class="mui-spinner"></span>
+        <div class="btn-align">
+        </div>
+      </div>
+    </ul>
+  </div>
+</body>
+
+</html>
+<!-- put this under /public/* -->
