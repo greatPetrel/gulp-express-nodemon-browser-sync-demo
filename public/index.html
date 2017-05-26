@@ -3,9 +3,20 @@
 <head>
   <link rel="stylesheet" href="css/site.css" />
   <script src="js/webpack/bundle.js" type="text/javascript" charset="utf-8" async defer></script>
-<style>
-  span{margin:20px;}
-</style>
+  <!--cookie 处理-->
+  <!--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"  type="text/javascript" ></script>-->
+  <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+
+  <!--cookie 处理 -->
+
+
+  <style>
+    span {
+      margin: 20px;
+    }
+  </style>
 </head>
 
 <body class="what">
@@ -17,36 +28,30 @@
     <a href="http://browserify.org/" target="_blank">browserify</a> or
     <a href="http://zhaoda.net/webpack-handbook/index.html" target="_blank">webpack</a> if you wish to serve browser-specific
     modules from Node.</div>
-    <p>if index.html in boot menu is nessary</p>
-    <span>
+  <p>if index.html in boot menu is nessary</p>
+  <span>
         <a href="pages/2.html">pages/2.html</a>
     </span>
-     <span>
+  <span>
         <a href="pages/view-pdf.html">pages/view-pdf.html</a>
     </span>
-     <span>
+  <span>
         <a href="pages/view-docs.html">pages/view-docs.html</a>
     </span>
-    <span>
+  <span>
         <a href="Viewerjs/docs/hongdo.docx">Viewerjs/docs/hongdo.docx</a>
     </span>
-    <br/>
-    <!--<p><a href="Viewerjs/docs/hongdo.docx">Viewerjs/docs/hongdo.docx</a></p>-->
+  <br/>
+  <!--<p><a href="Viewerjs/docs/hongdo.docx">Viewerjs/docs/hongdo.docx</a></p>-->
 
   <p>【/2.html】This is not work,that's because
     <b style="color: red;"> prefix "/"</b> means <b style="color: red;"> root menu</b></p>
-  <!-- from 小咸鱼 -->
-  <div class="listHeight what">
-    <!--列表内容写在这里面-->
-    <ul class="mui-table-view" id="list">
-      <div class="loading loadingList">
-        <span class="text"></span>
-        <span class="mui-spinner"></span>
-        <div class="btn-align">
-        </div>
-      </div>
-    </ul>
-  </div>
+
+  <p>
+    <button onclick="init_cookie('time','10s','10');">设置cookie</button>
+    <button onclick="dele_cookie('time');">删除cookie</button>
+  </p>
+
 </body>
 
 </html>
