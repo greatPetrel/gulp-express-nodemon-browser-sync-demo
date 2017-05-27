@@ -6,44 +6,17 @@
   <title>pdf viewer</title>
   <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
-
   <!--cookie 处理-->
-
   <script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8" ></script>
     <script src="../js/cookie.js" type="text/javascript" charset="utf-8" ></script>
 <!--cookie 处理 -->
-<script>
-  var now_cookies=$.cookie();
-  console.log(now_cookies); 
-   setTimeout(function(){    
-	  console.log('10  秒后cookie-time  失效'); 
-	  console.log($.cookie()); 
- },10000);
-</script>
-
   <style>
-    .sider {
-      float: right;
-    }
-
-    .filelist li {
-      height: 30px;
-      margin-top: 20px;
-    }
-
-    .filelist img {
-      width: 25px;
-      height: 25px;
-      position: relative;
-      top: 5px;
-    }
-
-    .hide {
-      display: none;
-    }
+    .sider {float: right;}
+.filelist li {height: 30px;margin-top: 20px;}
+.filelist img {width: 25px;height: 25px;position: relative;top: 5px;}
+.hide {display: none;}
   </style>
 </head>
-
 <body>
   <nav>
     <ul>
@@ -74,7 +47,7 @@
     var pre_url = "../doc/";
 
     //TODO ：此处pdf数据来自后台
-    var pdfs = ['ghy.pdf', '永柏睿信基金1期投资简报.pdf', 'js.pdf'];
+    var pdfs = ['1471-2148-14-100-S6.pdf', 'irsformw2.pdf', 'Letter-from-Ivan-March-2012.pdf'];
     var url = pre_url + pdfs[0];
     var pdf_logo_img = '\<img src="../img/pdf-logo.png" alt="">';
 
