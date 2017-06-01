@@ -1,13 +1,15 @@
 {
   "name": "gulp-expressjs-nodemon-browser-sync",
   "version": "0.0.0",
-  "description": "两次安装gulp全局安装gulp是为了执行gulp任务，本地安装gulp则是为了调用gulp插件的功能。",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --inline ",
+    "start-open": "webpack-dev-server --open ",
     "webpackstart": "webpack --config mywebpack.config.js",
-    "gulp":"gulp"
+    "build:dev": "webpack --env=dev --progress --profile --colors",
+    "build:dist": "webpack --env=prod --progress --profile --colors"
   },
   "author": {
     "name": "Hafiz Ismail",
