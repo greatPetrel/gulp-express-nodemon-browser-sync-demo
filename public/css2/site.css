@@ -1,0 +1,23 @@
+.sider {
+  float: right;
+}
+
+.filelist li {
+  height: 0.4rem;
+  margin-top: 0.266667rem;
+}
+
+.filelist img {
+  width: 0.333333rem;
+  height: 0.333333rem;
+  position: relative;
+  top: 0.066667rem;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background: rebeccapurple;
+}

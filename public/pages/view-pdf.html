@@ -6,44 +6,17 @@
   <title>pdf viewer</title>
   <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
-
   <!--cookie 处理-->
-
   <script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8" ></script>
     <script src="../js/cookie.js" type="text/javascript" charset="utf-8" ></script>
 <!--cookie 处理 -->
-<script>
-  var now_cookies=$.cookie();
-  console.log(now_cookies); 
-   setTimeout(function(){    
-	  console.log('10  秒后cookie-time  失效'); 
-	  console.log($.cookie()); 
- },10000);
-</script>
-
   <style>
-    .sider {
-      float: right;
-    }
-
-    .filelist li {
-      height: 30px;
-      margin-top: 20px;
-    }
-
-    .filelist img {
-      width: 25px;
-      height: 25px;
-      position: relative;
-      top: 5px;
-    }
-
-    .hide {
-      display: none;
-    }
+    .sider {float: right;}
+.filelist li {height: 30px;margin-top: 20px;}
+.filelist img {width: 25px;height: 25px;position: relative;top: 5px;}
+.hide {display: none;}
   </style>
 </head>
-
 <body>
   <nav>
     <ul>
@@ -68,6 +41,7 @@
   </div>
   <canvas id="the-canvas"></canvas>
 
+<<<<<<< HEAD
   <script type="text/javascript">
     // If absolute URL from the remote server is provided, configure the CORS
     // header on that server.
@@ -220,6 +194,9 @@
       });
     }
   </script>
+=======
+  <script src="../js/pdf.ghy.js" type="text/javascript"></script>
+>>>>>>> 84d96d1574482442b5e4e714e9c103328ae4d367
 </body>
 
 </html>
